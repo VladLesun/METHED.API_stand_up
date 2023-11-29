@@ -1,14 +1,26 @@
 [
 	{
-		"fullName": "Владислав Лесун",
+		"booking": [
+			{ "comedian": "2", "time": " 13:00" },
+			{ "comedian": "4", "time": " 15:00" },
+			{ "comedian": "3", "time": " 14:00" }
+		],
+		"fullName": "Владос",
 		"phone": "+375(33) 635-94-81",
-		"ticketNumber": "11",
-		"booking": [{ "comedian": "Алексей Щербаков", "time": "15:40" }]
+		"ticketNumber": "11111111",
+		"comedian": "",
+		"time": "14:00"
 	},
 	{
-		"fullName": "Григорий Петров",
-		"phone": "+375(33) 999-55-81",
-		"ticketNumber": "16",
-		"booking": [{ "comedian": "Алексей Щербаков", "time": "15:40" }]
+		"booking": [
+			{ "comedian": "5", "time": " 16:00" },
+			{ "comedian": "4", "time": " 15:00" },
+			{ "comedian": "6", "time": " 17:00" }
+		],
+		"fullName": "Маратик",
+		"phone": "+375(44) 567-89-01",
+		"ticketNumber": "22222222",
+		"comedian": "",
+		"time": "17:00"
 	}
 ]

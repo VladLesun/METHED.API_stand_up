@@ -1,18 +1,17 @@
-import { sendData, sendError } from './send.js';
+import { sendData, sendError } from "./send.js";
 
-export const handleComediansRequest = async (req, res, comedians, segments) => {
-	if (segments.length === 2) {
-		const comedian = comedians.find((comedian) => comedian.id === segments[1]);
+export const handleComediansRequest = async (req, res, comedians, id) => {
+  if (id) {
+    const comedian = comedians.find((c) => c.id === id);
 
-		if (!comedian) {
-			sendError(res, 404, 'Stand Up комик не найден...');
-			return;
-		}
+    if (!comedian) {
+      sendError(res, 404, "Stand up комик не найден");
+      return;
+    }
 
-		sendData(res, comedian);
-		return;
-	}
+    sendData(res, comedian);
+    return;
+  }
 
-	sendData(res, comedians);
-	return;
+  sendData(res, comedians);
 };
